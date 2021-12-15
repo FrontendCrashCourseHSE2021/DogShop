@@ -6,9 +6,8 @@ import {SingleItemComponent} from "./SingleItemComponent";
 import {CartComponent} from "./CartComponent";
 import {Button, Container, Nav, Navbar} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
+/**import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";*/
 import {faOpencart} from "@fortawesome/free-brands-svg-icons";
-
 /**
  * Главная компонента приложения.
  */
@@ -18,18 +17,18 @@ export function App() {
         // В корне приложения -- роутер, который "отрисовывает" нужную компоненту в зависимости от URL
         <BrowserRouter>
             {/*Часть, которая рисуется всегда -- хедер страницы*/}
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="light" variant="light">
                 <Container>
-                    <Navbar.Brand href="/">Dog Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">УСЛУГИ ДЛЯ СОБАК</Navbar.Brand>
                     <Nav className="me-auto">
                         {/*Ссылка перехода на главную страницу*/}
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/">Наш адрес: СПб, ул. Барбоскина, д. 15</Nav.Link>
                     </Nav>
                     <Nav className="justify-content-end">
                         {/*Ссылка для перехода в корзину*/}
                         <Link to={"/cart"}>
                             {/*Кнопка корзины*/}
-                            <Button variant={"primary"}>
+                            <Button variant={"secondary"}>
                                 {/*Иконка с корзиной*/}
                                 <FontAwesomeIcon icon={faOpencart} />
                             </Button>

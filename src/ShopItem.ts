@@ -4,9 +4,9 @@
 import {Description} from "./Descriptions";
 
 export enum ItemColor {
-    red = "Red",
-    blue = "Blue",
-    black = "Black"
+    red = "<1000₽",
+    blue = ">1000₽",
+    black = "VIP"
 }
 
 export class ShopItem {

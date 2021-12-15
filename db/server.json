@@ -1,124 +1,260 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "quantity": 7
+    },
+    {
+      "id": 2,
+      "quantity": 7
+    },
+    {
+      "id": 3,
+      "quantity": 2
+    },
+    {
+      "id": 6,
+      "quantity": 4
+    },
+    {
+      "id": 5,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "quantity": 1
+    }
+  ],
   "items": [
     {
       "id": 1,
-      "title": "Foo bar",
-      "price": 100,
-      "color": "red",
-      "imageSrc": "https://farm8.staticflickr.com/7062/7053816915_8a0a65c3c7_b.jpg",
-      "brief": "Lorem ipsum dolor sit amet",
+      "title": "Груминг",
+      "price": 1500,
+      "color": "blue",
+      "imageSrc": "https://static.tildacdn.com/tild3132-3631-4138-a462-376233306436/dog-groomed-many-too.jpg",
+      "brief": "Груминг — это комплекс процедур по уходу за шерстью, кожей, когтями, ушами и глазами собак. Вашей собаке понравится.",
       "description": [
         {
           "type": "text",
-          "text": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+          "text": "Может выполняться как в гигиенических целях, так и для улучшения внешнего вида собаки при подготовке к выставке или другим соревнованиям. Профессиональный специалист по грумингу — грумер собак."
         },
         {
           "type": "checkbox",
           "name": "check1",
           "variant": [
-            "asdlasldlsa",
-            "aspqqp",
-            "qweewe"
+            "В повседневных целях.",
+            "Для выставки.",
+            "Для путешествия."
           ]
         },
         {
           "type": "image",
-          "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg"
+          "imageSrc": "https://static-sl.insales.ru/images/products/1/7603/269467059/Shed-Pal-3.jpg"
         },
         {
           "type": "checkbox",
           "name": "check2",
           "variant": [
-            "Test",
-            "Foo",
-            "Bar"
+            "Размер собаки XS,S - 2 часа",
+            "Размер собаки M,L - 3 часа",
+            "Размер собаки XL и далее - 4 часа"
           ]
         },
         {
           "type": "text",
-          "text": "dasdasd asljdaslj djasnd kjahskd as"
+          "text": "Время оказания услуги зависит от размера собаки."
         }
       ]
     },
     {
       "id": 2,
-      "title": "Lorem ipsum",
+      "title": "Выгул собаки",
+      "price": 300,
       "color": "red",
-      "price": 123,
-      "imageSrc": "https://sobakainfo.ru/wp-content/uploads/2016/11/6-14.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "imageSrc": "https://media.istockphoto.com/photos/dog-with-brown-leather-leash-in-its-mouth-picture-id177636661?k=20&m=177636661&s=612x612&w=0&h=XfG_0hbthqfqxNGsYQ7tvewQh_JKryy03OXO1i5NBO4=",
+      "brief": "Ваша собака на открытом воздухе для удовлетворения физиологической потребности и гармоничного развития.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Теперь ни плохая погода, ни задержка на работе, ни срочная поездка хозяина не помешают вашему хвостику отправиться на прогулку! Профессиональные выгульщики придут на помощь и найдут подход к любому питомцу. Обращаем ваше внимание, что стоимость услуг может меняться в зависимости от вида выгула собаки и желаемого времени выгула. Стоимость указана за час."
+        },
+        {
+          "type": "checkbox",
+          "name": "check1",
+          "variant": [
+            "Индивидуальный выгул собаки.",
+            "Выгул собаки в группе.",
+            "Выгул + дрессировка."
+          ]
+        },
+        {
+          "type": "image",
+          "imageSrc": "https://petzona.ru/wp-content/uploads/2019/01/podrabotka-vygul-sobak-za-dengi-1.jpg"
+        },
+        {
+          "type": "checkbox",
+          "name": "check2",
+          "variant": [
+            "15 минут",
+            "30 минут",
+            "1 час",
+            "другое"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Выберите желаемое время прогулки."
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Dolor",
-      "color": "blue",
-      "price": 500,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/5/4/e/54ef2ae25328982d8ec84de9bb018bde.jpeg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Передержка в отеле Собачье счастье",
+      "price": 750,
+      "color": "red",
+      "imageSrc": "https://i.pinimg.com/originals/f6/58/4f/f6584f5be47eee74bfa06405cdfff2ef.jpg",
+      "brief": "Комфортный зоо-отель с профессиональной командой нянечек и выгульщиков. Вашему питомцу понравится!",
+      "description": [
+        {
+          "type": "text",
+          "text": "Расположение отеля идеальное. Релаксация царит во всём пространстве. Он имеет частную внутреннюю террасу для выгула питомцев. Стоимость указана за сутки."
+        },
+        {
+          "type": "checkbox",
+          "name": "check2",
+          "variant": [
+            "3-х разовое питание",
+            "6-ти разовое питание",
+            "особая диета",
+            "всё включено"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Ваш хвостик не захочет уезжать."
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Sit",
-      "color": "black",
-      "price": 600,
-      "imageSrc": "https://lapkins.ru/upload/uf/55b/55b9fa60a5dbc4abe05fa7abe6564d6b.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Онлайн консультация ветеринара",
+      "price": 999,
+      "color": "red",
+      "imageSrc": "https://vethelp24.spb.ru/wp-content/uploads/2019/02/vizov-vracha-veterinara-na-dom-spb566pxnew.png",
+      "brief": "Любые вопросы связанные со здоровьем вашего хвостика, включая вопросы по питанию.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Время консультации до 1 часа. Вам и вашему хвостику не придётся никуда ехать. В случае если вопрос нельзя разрешить консультацией, вы можете заказать выезд ветеринара на дом.  "
+        }
+      ]
     },
     {
       "id": 5,
-      "title": "Amet",
+      "title": "Вызов ветеринара на дом",
+      "price": 2499,
       "color": "black",
-      "price": 1000,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "imageSrc": "https://aibolit66.ru/upload/iblock/f3d/f3dace44cbfb5e757c225c1c4a03df4b.jpg",
+      "brief": "Ветеринар окажет помощь вашему хвостику в домашних условиях, быстро и профессионально.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Здесь только одни преимущества: привычная обстановка для вашего заболевшего хвостика, никаких очередей, не надо никуда ехать, быстрый выезд ветеринара.Выезд в течение часа и зависит от загруженности клиники."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Вакцинация на дому",
+      "price": 1499,
+      "color": "blue",
+      "imageSrc": "https://zoomak.ru/wp-content/uploads/2017/12/c424bc3e30a3c1590771071b7c50ed48.jpg",
+      "brief": "Наш специалист приедет к вам и сделает требуемые прививки, в удобное для вас время. Ваш хвостик ничего не заметит.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Мы предлагаем вакцины, как зарубежных, так и отечественных компаний. В любом случае во избежание негативных последствий от вакцинации, проводится консультации со специалистом, исследуются индивидуальные особенности хвостика. И исходя из этого подбирается препарат для вакцинации."
+        },
+        {
+          "type": "text",
+          "text": "Выберите от чего планируете прививаться: "
+        },
+        {
+          "type": "checkbox",
+          "name": "check2",
+          "variant": [
+            "от Бешенства",
+            "от Чумы",
+            "от Инфекционного гепатита",
+            "от Парвовирусного энтерита",
+            "от Парагриппа",
+            "от Лептоспироза",
+            "другое"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Выберите: "
+        },
+        {
+          "type": "checkbox",
+          "name": "check2",
+          "variant": [
+            "Первичная вакцинация",
+            "Ревакцинация"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Блеск-тату",
+      "price": 3000,
+      "color": "black",
+      "imageSrc": "https://i.pinimg.com/originals/05/7a/cd/057acdc0cc71a433485004bd5febbc13.jpg",
+      "brief": "Выделить своего питомца на празднике или летом, когда у хвостика короткая стрижка, можно путем нанесения глиттер-тату.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Блестящий рисунок наносится на шерсть или на кожу собаки при помощи геля и цветных блёсток. Глиттер-тату не вредит здоровью животного, т.к. держится непродолжительное время, не вызывает аллергии и раздражения, используемые блестки и клеящий гель не токсичны."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Ветеринарное страхование",
+      "price": 3500,
+      "color": "black",
+      "imageSrc": "https://i04.fotocdn.net/s116/718ce116fe42cf7e/public_pin_l/2651821530.jpg",
+      "brief": "Страхование вашего хвостика от всех заболеваний и травм. Будьте спокойны за своего питомца.",
+      "description": [
+        {
+          "type": "text",
+          "text": "Страховой полис распространяется на все клиники РФ."
+        }
+      ]
     }
   ],
   "comments": [
     {
-      "shopItemId": 2,
-      "text": "Very nice!",
+      "shopItemId": 1,
+      "text": "jgjgjgj\n",
       "id": 1
     },
     {
       "shopItemId": 2,
-      "text": "sdadsasd",
+      "text": "Пользуюсь регулярно! спасибо вам!",
       "id": 2
     },
     {
-      "shopItemId": 2,
-      "text": "sdkfmsdlkf",
+      "shopItemId": 6,
+      "text": "За вакцинацией только к вам!",
       "id": 3
     },
     {
-      "shopItemId": 2,
-      "text": "asdasd",
+      "shopItemId": 3,
+      "text": "Нам здесь так понравилось! будем оставлять нашего любимца только здесь на время нашего отпуска!",
       "id": 4
-    },
-    {
-      "shopItemId": 2,
-      "text": "asdasdq312312",
-      "id": 5
-    },
-    {
-      "shopItemId": 2,
-      "text": "34123123123asdasd",
-      "id": 6
-    },
-    {
-      "shopItemId": 2,
-      "text": "slkdjalksdl",
-      "id": 7
-    },
-    {
-      "shopItemId": 3,
-      "text": "asdasdmaslkd",
-      "id": 8
-    },
-    {
-      "shopItemId": 3,
-      "text": "asdad;q3le23",
-      "id": 9
     }
   ]
 }

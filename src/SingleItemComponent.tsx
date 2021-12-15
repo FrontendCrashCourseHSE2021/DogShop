@@ -151,10 +151,10 @@ export function SingleItemComponent() {
                     </Col>
                     <Col>
                         <h1>{item.title}</h1>
-                        <p>Brief: {item.brief}</p>
-                        <h5>Description</h5>
+                        <p>Кратко об услуге: {item.brief}</p>
+                        <h5>Описание</h5>
                         {renderDescriptions(item.description)}
-                        <span><b>${item.price}</b></span> <Button onClick={() => addToCart()} variant={"success"}>Add to cart</Button>
+                        <span><b>₽ {item.price}</b></span> <Button onClick={() => addToCart()} variant="outline-primary">ДОБАВИТЬ</Button>{' '}
                     </Col>
                 </Row>
 
@@ -179,7 +179,7 @@ export function SingleItemComponent() {
                 </Row>
                 <Row>
                     <Col>
-                        <Button onClick={() => submitComment()}>Submit</Button>
+                        <Button onClick={() => submitComment()} variant="outline-secondary">ОСТАВЬ ОТЗЫВ</Button>
                     </Col>
                 </Row>
             </Container>

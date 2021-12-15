@@ -60,7 +60,7 @@ export function MainComponent() {
                             );
                           })
                       }
-                      <option selected value="">All</option>
+                      <option selected value="">ПОКАЗАТЬ ВСЕ УСЛУГИ</option>
                   </Form.Select>
               </Col>
           </Row>

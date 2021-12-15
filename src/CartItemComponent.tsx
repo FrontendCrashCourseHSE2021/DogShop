@@ -57,7 +57,7 @@ export function CartItemComponent(props: CartItemComponentProps) {
                                 // Price: ${itemPrice}
                                 }
 
-                                Price: ${props.cartItem.quantity * (state.item?.price ?? 0)}
+                                Price: ₽ {props.cartItem.quantity * (state.item?.price ?? 0)}
                             </div>
                         </Card.Text>
                     </Card.Body>
