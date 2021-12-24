@@ -1,6 +1,6 @@
 
 
-type DescriptionType = "image" | "text" | "checkbox";
+type DescriptionType = "image" | "text" | "checkbox" ;
 
 export interface Description {
 
@@ -26,3 +26,4 @@ export interface CheckboxDescription extends Description {
     variant: string[];
 
 }
+

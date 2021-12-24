@@ -75,7 +75,7 @@ export function SingleItemComponent() {
                     {
                         desc.variant.map(checkBox => {
                             return (
-                                <Form.Check name={desc.name} type={"checkbox"} label={checkBox}/>
+                                <Form.Check name={desc.name} type={"switch"} label={checkBox}/>
                             )
                         })
                     }
@@ -151,8 +151,8 @@ export function SingleItemComponent() {
                     </Col>
                     <Col>
                         <h1>{item.title}</h1>
-                        <p>Brief: {item.brief}</p>
-                        <h5>Description</h5>
+                        <p>{item.brief}</p>
+                        <h4>Description</h4>
                         {renderDescriptions(item.description)}
                         <span><b>${item.price}</b></span> <Button onClick={() => addToCart()} variant={"success"}>Add to cart</Button>
                     </Col>

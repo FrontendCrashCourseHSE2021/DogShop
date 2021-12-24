@@ -20,10 +20,10 @@ export function App() {
             {/*Часть, которая рисуется всегда -- хедер страницы*/}
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">Dog Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">MAGIC SHOP</Navbar.Brand>
                     <Nav className="me-auto">
                         {/*Ссылка перехода на главную страницу*/}
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/">Главная</Nav.Link>
                     </Nav>
                     <Nav className="justify-content-end">
                         {/*Ссылка для перехода в корзину*/}
