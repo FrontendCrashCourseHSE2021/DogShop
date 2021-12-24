@@ -10,7 +10,7 @@ import "./MainComponent.scss";
  */
 interface MainComponentState {
     items: ShopItem[];
-    color: string | null;
+    artist: string | null;
 }
 
 /**
@@ -19,25 +19,25 @@ interface MainComponentState {
 export function MainComponent() {
     let [state, changeState] = useState<MainComponentState>({
         items: [],
-        color: null
+        artist: null
     });
 
     useEffect(() => {
         // Один раз загружаем все товары
-        DataServiceInstance.getData(state.color).then(value => {
+        DataServiceInstance.getData(state.artist).then(value => {
             changeState({
                 items: value,
-                color: state.color
+                artist: state.artist
             });
         });
-    }, [state.color]);
+    }, [state.artist]);
 
     function onColorInputChange(event: React.ChangeEvent<HTMLSelectElement>) {
         let value: string = event.target.value;
 
         changeState({
             ...state,
-            color: value
+            artist: value
         });
     }
 
@@ -49,12 +49,12 @@ export function MainComponent() {
               <Col xs={3}>
                   <Form.Select defaultValue={""} className="color-select" onChange={event => onColorInputChange(event)}>
                       {
-                          Object.keys(ItemColor).map(color => {
+                          Object.keys(ItemColor).map(artist => {
                             // @ts-ignore
-                            let humanReadable = ItemColor[color]
+                            let humanReadable = ItemColor[artist]
 
                             return (
-                                <option key={color} value={color}>
+                                <option key={artist} value={artist}>
                                     {humanReadable}
                                 </option>
                             );

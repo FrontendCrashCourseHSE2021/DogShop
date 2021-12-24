@@ -4,9 +4,9 @@
 import {Description} from "./Descriptions";
 
 export enum ItemColor {
-    red = "Red",
-    blue = "Blue",
-    black = "Black"
+    BTS = "BTS",
+    BP = "Black Pink",
+    skz = "STRAY KIDS"
 }
 
 export class ShopItem {
@@ -38,7 +38,7 @@ export class ShopItem {
     /**
      * Цвет.
      */
-    public color: ItemColor;
+    public artist: ItemColor;
 
     /**
      * Полное описание.
@@ -52,7 +52,7 @@ export class ShopItem {
         imageSrc: string,
         brief: string,
         description: Description[],
-        color: ItemColor
+        artist: ItemColor
     ) {
         this.id = id;
         this.title = title;
@@ -60,6 +60,6 @@ export class ShopItem {
         this.imageSrc = imageSrc;
         this.brief = brief;
         this.description = description;
-        this.color = color;
+        this.artist = artist;
     }
 }
