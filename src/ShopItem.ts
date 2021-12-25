@@ -4,9 +4,9 @@
 import {Description} from "./Descriptions";
 
 export enum ItemColor {
-    red = "Red",
-    blue = "Blue",
-    black = "Black"
+    red = "Руни дома",
+    blue = "Руни на улице",
+    black = "Новые друзья"
 }
 
 export class ShopItem {

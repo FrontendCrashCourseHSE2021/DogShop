@@ -18,12 +18,12 @@ export function App() {
         // В корне приложения -- роутер, который "отрисовывает" нужную компоненту в зависимости от URL
         <BrowserRouter>
             {/*Часть, которая рисуется всегда -- хедер страницы*/}
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="light" variant="light">
                 <Container>
-                    <Navbar.Brand href="/">Dog Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">Rooney's story</Navbar.Brand>
                     <Nav className="me-auto">
                         {/*Ссылка перехода на главную страницу*/}
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/">Главная</Nav.Link>
                     </Nav>
                     <Nav className="justify-content-end">
                         {/*Ссылка для перехода в корзину*/}
