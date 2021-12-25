@@ -1,124 +1,110 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "quantity": 2
+    },
+    {
+      "id": 3,
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "quantity": 1
+    }
+  ],
   "items": [
     {
       "id": 1,
-      "title": "Foo bar",
-      "price": 100,
+      "title": "История Руни про первый раз в доме",
       "color": "red",
-      "imageSrc": "https://farm8.staticflickr.com/7062/7053816915_8a0a65c3c7_b.jpg",
-      "brief": "Lorem ipsum dolor sit amet",
+      "price": 10,
+      "imageSrc": "https://st4.depositphotos.com/12985790/i/600/depositphotos_228216284-stock-photo-adorable-welsh-corgi-pembroke-puppy.jpg",
+      "brief": "Рассказ щенка о том, как он обрел новый дом.",
       "description": [
         {
           "type": "text",
-          "text": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
-        },
-        {
-          "type": "checkbox",
-          "name": "check1",
-          "variant": [
-            "asdlasldlsa",
-            "aspqqp",
-            "qweewe"
-          ]
-        },
-        {
-          "type": "image",
-          "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg"
+          "text": "Руни появился в новом доме 28 ноября 2021 года. Он был долгожданным подарком своего питомца (отсылка к 101 долматинцу). На дне рождении было очень много людей, но Руни не растерялся и вел себя со всеми дружелюбно, ни разу не гавкнул и даже не сходил в туалет не в положеном месте!"
         },
         {
           "type": "checkbox",
           "name": "check2",
           "variant": [
-            "Test",
-            "Foo",
-            "Bar"
+            "Наклейки с Руни"
           ]
-        },
-        {
-          "type": "text",
-          "text": "dasdasd asljdaslj djasnd kjahskd as"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Lorem ipsum",
-      "color": "red",
-      "price": 123,
-      "imageSrc": "https://sobakainfo.ru/wp-content/uploads/2016/11/6-14.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Руни первый раз на улице",
+      "color": "blue",
+      "price": 25,
+      "imageSrc": "https://zooclub.ru/attach/1047.jpg",
+      "brief": "История о том, как Руни первый раз пошел гулять на улицу со своими питомцами",
+      "description": [
+        {
+          "type": "text",
+          "text": "Руни очень волновался, когда ему надо было первый раз выйти на улицу, потому что у него не было поводка и ошейника. Его питомцу пришлось нести его на руках, чтобы он не потрелся и не убежал. Зато когда была куплена удобная шлейка, красивый повод - как приятно было вышагивать рядом со своим питомцем! Можно было обнюхать все углы по пути домой, попрбовать украсть что-то с мусорки (хотя эта шалость почти не удалась...)."
+        },
+        {
+          "type": "image",
+          "imageSrc": "https://img.joomcdn.net/d93ee292ec72bb36a220db204f839c5c94d4dea4_original.jpeg"
+        },
+        {
+          "type": "checkbox",
+          "name": "check2",
+          "variant": [
+            "Наклейки с Руни"
+          ]
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Dolor",
-      "color": "blue",
-      "price": 500,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/5/4/e/54ef2ae25328982d8ec84de9bb018bde.jpeg",
-      "brief": "Lorem ipsum dolor sit amet"
-    },
-    {
-      "id": 4,
-      "title": "Sit",
+      "title": "Новые друзья",
       "color": "black",
-      "price": 600,
-      "imageSrc": "https://lapkins.ru/upload/uf/55b/55b9fa60a5dbc4abe05fa7abe6564d6b.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
-    },
-    {
-      "id": 5,
-      "title": "Amet",
-      "color": "black",
-      "price": 1000,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "price": 40,
+      "imageSrc": "https://cdn.spbdnevnik.ru/uploads/block/image/505315/__medium_корги%20пати%20парк%20300%20лет_с.%20холявчук37.JPG.jpg",
+      "brief": "Как дойти до Таврического парка в -18 в хорошем настроении, а еще найти новых друзей??? Знает только Руни!",
+      "description": [
+        {
+          "type": "text",
+          "text": "Руни всегда ходил гулять в парк рядом с домом, но тут он вышел, подумал: хм, сегодня прохладнее, чем было. Потом он понял, что что-то не так, когда питомцы повели его в другую сторону от его любимого парка - новые запахи, новые собаки, новые мусорки... Глаза разбегаются!!! Но когда он увидел новый огромный парк, у него пересохло горло, хотелось громко гавкать, да гавкать он не привык и не хотелось пугать питомцев, а то вдруг поведут опять в то ужасное место, где другие питомцы ходят в странных белых шторах... Прошло 30 минут, Руни точно убедидся, что ему все нравится, как вдруг он увидел красивого той-терьера, который оказался девочкой, да еще и такой игривой, тут его эмоции достигли пика и он побежал радостно размахивая хвостиком к новому другу с которым играл еще добрых 40 минут.. Отличный день!"
+        },
+        {
+          "type": "checkbox",
+          "name": "check1",
+          "variant": [
+            "Наклейки с Руни"
+          ]
+        },
+        {
+          "type": "image",
+          "imageSrc": "https://img.joomcdn.net/d93ee292ec72bb36a220db204f839c5c94d4dea4_original.jpeg"
+        }
+      ]
     }
   ],
   "comments": [
     {
       "shopItemId": 2,
-      "text": "Very nice!",
+      "text": "Боже, обожаю истории про Руни!!!",
       "id": 1
     },
     {
       "shopItemId": 2,
-      "text": "sdadsasd",
+      "text": "Хочу больше историй!!!",
       "id": 2
     },
     {
       "shopItemId": 2,
-      "text": "sdkfmsdlkf",
+      "text": "Руни лучший пес на свете!",
       "id": 3
-    },
-    {
-      "shopItemId": 2,
-      "text": "asdasd",
-      "id": 4
-    },
-    {
-      "shopItemId": 2,
-      "text": "asdasdq312312",
-      "id": 5
-    },
-    {
-      "shopItemId": 2,
-      "text": "34123123123asdasd",
-      "id": 6
-    },
-    {
-      "shopItemId": 2,
-      "text": "slkdjalksdl",
-      "id": 7
-    },
-    {
-      "shopItemId": 3,
-      "text": "asdasdmaslkd",
-      "id": 8
-    },
-    {
-      "shopItemId": 3,
-      "text": "asdad;q3le23",
-      "id": 9
     }
   ]
 }
