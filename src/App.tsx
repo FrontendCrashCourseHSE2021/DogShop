@@ -4,11 +4,11 @@ import {MainComponent} from "./MainComponent";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import {SingleItemComponent} from "./SingleItemComponent";
 import {CartComponent} from "./CartComponent";
-import {Button, Container, Nav, Navbar} from 'react-bootstrap';
+import {Button, Container, Nav, Navbar,Alert} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {faOpencart} from "@fortawesome/free-brands-svg-icons";
-
+import { faPaw } from '@fortawesome/free-solid-svg-icons'
 /**
  * Главная компонента приложения.
  */
@@ -20,7 +20,7 @@ export function App() {
             {/*Часть, которая рисуется всегда -- хедер страницы*/}
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">Dog Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">Передержка хвостиков 🐈🐕❤ </Navbar.Brand>
                     <Nav className="me-auto">
                         {/*Ссылка перехода на главную страницу*/}
                         <Nav.Link href="/">Home</Nav.Link>
@@ -31,12 +31,24 @@ export function App() {
                             {/*Кнопка корзины*/}
                             <Button variant={"primary"}>
                                 {/*Иконка с корзиной*/}
-                                <FontAwesomeIcon icon={faOpencart} />
+                                <Navbar.Brand href="/">Корзина помощи </Navbar.Brand>
+                                <FontAwesomeIcon icon={faPaw} />
                             </Button>
                         </Link>
                     </Nav>
                 </Container>
             </Navbar>
+
+            <Alert variant="success">
+                <Alert.Heading>Привет,мы рады, что ты решил помочь милым хвостикам</Alert.Heading>
+                <p>
+                    Если ты сам хочешь приютить животное, то просто жми на карточку питомца, там вся контактная информация
+                </p>
+                <hr />
+                <p className="mb-0">
+                   Если ты хочешь помочь денежкой, то жми на кнопочку помочь, на карточке указана минимальная сумма необходимая для помощи и восстановления питомца 💕
+                </p>
+            </Alert>
 
             <Routes>
                 {/*Три пути:*/}
@@ -47,6 +59,7 @@ export function App() {
                 <Route path={"item/:itemId"} element={<SingleItemComponent/>}/>
                 <Route path={"cart"} element={<CartComponent/>}/>
             </Routes>
+
         </BrowserRouter>
     );
 }

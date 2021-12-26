@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {ItemColor, ShopItem} from "./ShopItem";
+import {ItemCatDog, ShopItem} from "./ShopItem";
 import {Col, Container, Form, Row} from "react-bootstrap";
 import {ListItemComponent} from "./ListItemComponent";
 import {DataServiceInstance} from "./DataService";
@@ -10,7 +10,7 @@ import "./MainComponent.scss";
  */
 interface MainComponentState {
     items: ShopItem[];
-    color: string | null;
+    catordog: string | null;
 }
 
 /**
@@ -19,25 +19,25 @@ interface MainComponentState {
 export function MainComponent() {
     let [state, changeState] = useState<MainComponentState>({
         items: [],
-        color: null
+        catordog: null
     });
 
     useEffect(() => {
         // Один раз загружаем все товары
-        DataServiceInstance.getData(state.color).then(value => {
+        DataServiceInstance.getData(state.catordog).then(value => {
             changeState({
                 items: value,
-                color: state.color
+                catordog: state.catordog
             });
         });
-    }, [state.color]);
+    }, [state.catordog]);
 
-    function onColorInputChange(event: React.ChangeEvent<HTMLSelectElement>) {
+    function onCatInputChange(event: React.ChangeEvent<HTMLSelectElement>) {
         let value: string = event.target.value;
 
         changeState({
             ...state,
-            color: value
+            catordog: value
         });
     }
 
@@ -47,14 +47,14 @@ export function MainComponent() {
       <Container>
           <Row>
               <Col xs={3}>
-                  <Form.Select defaultValue={""} className="color-select" onChange={event => onColorInputChange(event)}>
+                  <Form.Select defaultValue={""} className="catordog-select" onChange={event => onCatInputChange(event)}>
                       {
-                          Object.keys(ItemColor).map(color => {
+                          Object.keys(ItemCatDog).map(catordog => {
                             // @ts-ignore
-                            let humanReadable = ItemColor[color]
+                            let humanReadable = ItemCatDog[catordog]
 
                             return (
-                                <option key={color} value={color}>
+                                <option key={catordog} value={catordog}>
                                     {humanReadable}
                                 </option>
                             );
