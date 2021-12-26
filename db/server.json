@@ -1,123 +1,90 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "id": 2,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "quantity": 1
+    }
+  ],
   "items": [
     {
       "id": 1,
-      "title": "Foo bar",
+      "title": "Щенок ждёт помощи",
       "price": 100,
-      "color": "red",
-      "imageSrc": "https://farm8.staticflickr.com/7062/7053816915_8a0a65c3c7_b.jpg",
-      "brief": "Lorem ipsum dolor sit amet",
+      "catordog": "dog",
+      "imageSrc": "https://sun9-24.userapi.com/impg/6lfxakrYM4IBxpKCt4kjwc9CB9zdkaWgvd8y_w/hYvlOIvpUa8.jpg?size=1512x1436&quality=96&sign=9954b000da2682a1ad3e6dfb905abe58&type=album",
+      "brief": "Передержка на 2 недели",
       "description": [
         {
           "type": "text",
-          "text": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
-        },
-        {
-          "type": "checkbox",
-          "name": "check1",
-          "variant": [
-            "asdlasldlsa",
-            "aspqqp",
-            "qweewe"
-          ]
-        },
-        {
-          "type": "image",
-          "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg"
-        },
-        {
-          "type": "checkbox",
-          "name": "check2",
-          "variant": [
-            "Test",
-            "Foo",
-            "Bar"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "dasdasd asljdaslj djasnd kjahskd as"
+          "text": "Парфинские щенки 🐶🐶 быстро растут, растут и аппетиты у них, и расход пелёнок. На еду и пелёнки уходит немалая сумма.\nПеленки очень быстро заканчиваются. Сегодня снова пополнили запас, но это на несколько дней. Будем очень признательны, если кто - то сможет поделиться🙏.\nА ещё малыши очень хотят стать Домашними!\nМамы, Папы, где вы?!\nЭтих малышек уже могло бы не быть, но их заметили, спасли от замерзания. Наверное для того, чтоб стать счастливыми. А иначе как? Помогите им найти Дом🏠.\n❗Поделитесь с друзьями, расскажите, что у нас на Передержке есть две замечательные, нежные девочки. Примерный возраст 2 месяца, обработаны, сделана первая прививка. Помощь в стерилизации по достижению возраста."
         }
       ]
     },
     {
       "id": 2,
-      "title": "Lorem ipsum",
-      "color": "red",
-      "price": 123,
-      "imageSrc": "https://sobakainfo.ru/wp-content/uploads/2016/11/6-14.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Макс ждет твоей помощи!",
+      "catordog": "dog",
+      "price": 1,
+      "imageSrc": "https://sun9-24.userapi.com/impg/KthbXlIAcHRYlVRHaOhoNojl16uniiJ_xBtImw/s3-ijLBmZVA.jpg?size=1620x2160&quality=96&sign=a32500fd00851fd1f0cc1e96a18f65ea&type=album",
+      "brief": "Передержка на 2 недели"
     },
     {
       "id": 3,
-      "title": "Dolor",
-      "color": "blue",
-      "price": 500,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/5/4/e/54ef2ae25328982d8ec84de9bb018bde.jpeg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Передержка котика",
+      "catordog": "kit",
+      "price": 50,
+      "imageSrc": "https://sun9-35.userapi.com/impg/377DMu4GwNiYSaiOSHOSdA0tjnSczX8jBIb6CQ/GT6yqxLydfE.jpg?size=1920x1278&quality=96&sign=b2cf964d5e98aaa589a7441bd6216e5c&type=album",
+      "brief": "Передержка на 2 недели"
     },
     {
       "id": 4,
-      "title": "Sit",
-      "color": "black",
-      "price": 600,
-      "imageSrc": "https://lapkins.ru/upload/uf/55b/55b9fa60a5dbc4abe05fa7abe6564d6b.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Феликс",
+      "catordog": "kit",
+      "price": 1,
+      "imageSrc": "https://sun9-15.userapi.com/impg/lLm2QWGp0qVaua0w7Rf6uw56juhQM2c0hGxNtA/uPj0X3ObUXI.jpg?size=1440x1920&quality=96&sign=39f96721af13d435c400ac754ee04826&type=album",
+      "brief": "Передержка на 2 недели"
     },
     {
       "id": 5,
-      "title": "Amet",
-      "color": "black",
+      "title": "Срочно нужна передержка",
+      "catordog": "kit",
+      "price": 1,
+      "imageSrc": "https://sun9-21.userapi.com/impg/hy0Wlq_Q45lS9nviPlCbB3DWZNl8yEkJq0CA0A/GGwXGuSR8ls.jpg?size=1054x1600&quality=96&sign=e512d58d34e471bad1fc1682205accd4&type=album",
+      "brief": "Передержка на 2 недели"
+    },
+    {
+      "id": 6,
+      "title": "Пёс Кузя",
+      "catordog": "dog",
       "price": 1000,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "imageSrc": "https://sun9-53.userapi.com/impg/qFyCfkugn5edjE02eesmiZ_dsEbm1O1YTI_hQw/1XPxmrc0ANw.jpg?size=1200x1600&quality=96&sign=48c8200c9ec37c9f605996e53a1a164b&type=album",
+      "brief": "Передержка на 2 недели"
     }
   ],
   "comments": [
     {
       "shopItemId": 2,
-      "text": "Very nice!",
+      "text": "Очень милый!",
       "id": 1
     },
     {
       "shopItemId": 2,
-      "text": "sdadsasd",
+      "text": "Могу взять на неделю, какие условия?",
       "id": 2
     },
-    {
-      "shopItemId": 2,
-      "text": "sdkfmsdlkf",
-      "id": 3
-    },
-    {
-      "shopItemId": 2,
-      "text": "asdasd",
-      "id": 4
-    },
-    {
-      "shopItemId": 2,
-      "text": "asdasdq312312",
-      "id": 5
-    },
-    {
-      "shopItemId": 2,
-      "text": "34123123123asdasd",
-      "id": 6
-    },
-    {
-      "shopItemId": 2,
-      "text": "slkdjalksdl",
-      "id": 7
-    },
+
     {
       "shopItemId": 3,
-      "text": "asdasdmaslkd",
+      "text": "Нужны ли будут медикаменты?",
       "id": 8
     },
     {
       "shopItemId": 3,
-      "text": "asdad;q3le23",
+      "text": "Очень милый, сама не могу взять, но поищу кого-нибудь",
       "id": 9
     }
   ]

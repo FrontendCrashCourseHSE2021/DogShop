@@ -3,10 +3,9 @@
  */
 import {Description} from "./Descriptions";
 
-export enum ItemColor {
-    red = "Red",
-    blue = "Blue",
-    black = "Black"
+export enum ItemCatDog {
+    dog = "dog",
+    kit = "cat"
 }
 
 export class ShopItem {
@@ -38,7 +37,7 @@ export class ShopItem {
     /**
      * Цвет.
      */
-    public color: ItemColor;
+    public catordog: ItemCatDog;
 
     /**
      * Полное описание.
@@ -52,7 +51,7 @@ export class ShopItem {
         imageSrc: string,
         brief: string,
         description: Description[],
-        color: ItemColor
+        catordog: ItemCatDog,
     ) {
         this.id = id;
         this.title = title;
@@ -60,6 +59,6 @@ export class ShopItem {
         this.imageSrc = imageSrc;
         this.brief = brief;
         this.description = description;
-        this.color = color;
+        this.catordog = catordog;
     }
 }
