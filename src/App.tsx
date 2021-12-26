@@ -20,19 +20,19 @@ export function App() {
             {/*Часть, которая рисуется всегда -- хедер страницы*/}
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">Dog Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">Материалы</Navbar.Brand>
                     <Nav className="me-auto">
-                        {/*Ссылка перехода на главную страницу*/}
-                        <Nav.Link href="/">Home</Nav.Link>
+                        {/*Ссылка перехода на главную страницу
+                        <Nav.Link href="/">Home</Nav.Link>*/}
                     </Nav>
                     <Nav className="justify-content-end">
                         {/*Ссылка для перехода в корзину*/}
                         <Link to={"/cart"}>
-                            {/*Кнопка корзины*/}
+                            {/*Кнопка корзины
                             <Button variant={"primary"}>
-                                {/*Иконка с корзиной*/}
+                                {/*Иконка с корзиной
                                 <FontAwesomeIcon icon={faOpencart} />
-                            </Button>
+                            </Button>*/}
                         </Link>
                     </Nav>
                 </Container>
@@ -45,7 +45,7 @@ export function App() {
                 {/*3. /cart - корзина*/}
                 <Route path={""} element={<MainComponent/>}/>
                 <Route path={"item/:itemId"} element={<SingleItemComponent/>}/>
-                <Route path={"cart"} element={<CartComponent/>}/>
+                {/*               <Route path={"cart"} element={<CartComponent/>}/> */}
             </Routes>
         </BrowserRouter>
     );

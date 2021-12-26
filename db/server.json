@@ -1,124 +1,209 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "id": 2,
+      "quantity": 3
+    },
+    {
+      "id": 3,
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "quantity": 1
+    }
+  ],
   "items": [
     {
       "id": 1,
-      "title": "Foo bar",
-      "price": 100,
-      "color": "red",
-      "imageSrc": "https://farm8.staticflickr.com/7062/7053816915_8a0a65c3c7_b.jpg",
-      "brief": "Lorem ipsum dolor sit amet",
+      "title": "Как получить данные с сайта",
+      "price": "0",
+      "color": "api",
+      "imageSrc": "https://cdn-icons-png.flaticon.com/512/2165/2165004.png",
+      "brief": "Чеклист, для получения данных с сайта с помощью API",
       "description": [
-        {
-          "type": "text",
-          "text": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
-        },
         {
           "type": "checkbox",
           "name": "check1",
           "variant": [
-            "asdlasldlsa",
-            "aspqqp",
-            "qweewe"
+            "Найти сайт, в котором есть нужные данные, предоставляющий API"
           ]
         },
         {
-          "type": "image",
-          "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg"
+          "type": "text",
+          "text": "- смотрим все сайты, приложения нужной тематики"
+        },
+        {
+          "type": "text",
+          "text": "- отбираем те, у которых есть API (если данные с сайта, приложения очень нужны, но API нет, можно собрать данные вручную, например с помощью приложения webscrape)"
         },
         {
           "type": "checkbox",
           "name": "check2",
           "variant": [
-            "Test",
-            "Foo",
-            "Bar"
+            "Смотрим документацию API "
           ]
         },
         {
           "type": "text",
-          "text": "dasdasd asljdaslj djasnd kjahskd as"
+          "text": "- ищем в документации запросы, которые позволят получить нужные данные"
+        },
+        {
+          "type": "text",
+          "text": "- обращаем внимание на ограничения API"
+        },
+        {
+          "type": "checkbox",
+          "name": "check3",
+          "variant": [
+            "Делаем запрос"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "- проверяем самые простые запросы, чаще всего есть примеры (удобно использовать приложение postman)"
+        },
+        {
+          "type": "text",
+          "text": "- формируем нужный запрос, используя параметры"
+        },
+        {
+          "type": "checkbox",
+          "name": "check4",
+          "variant": [
+            "Получаем данные <a href=\"#\" class=\"link-dark\">Dark link</a>"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "- запрос можно получить с помощью библиотек python и сразу же обработать данные, пример запроса и обработки данных (1 пункт): https://colab.research.google.com/drive/1Lcvz4V6xl_7SpK3PU3WsMwtGhurMn419#scrollTo=ed_WHQIbfTwR"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Lorem ipsum",
-      "color": "red",
-      "price": 123,
-      "imageSrc": "https://sobakainfo.ru/wp-content/uploads/2016/11/6-14.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Как создать свой собственный API в AWS",
+      "color": "api",
+      "price": 0,
+      "imageSrc": "https://i1.wp.com/kagarlickij.com/wp-content/uploads/2019/03/aws-api-gateway-icon.png?fit=900%2C900&ssl=1",
+      "brief": "Инстукция по созданию собсвтенного Api в AWS",
+      "description": [
+        {
+          "type": "text",
+          "text": "1) Для того, чтобы создать свой API в AWS, можно воспользоваться сервисом API Gateway"
+        },
+        {
+          "type": "text",
+          "text": "2) По инструкции создайте HTTP API и lambda function: https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html "
+        },
+        {
+          "type": "image",
+          "imageSrc": "https://d2908q01vomqb2.cloudfront.net/fa35e192121eabf3dabf9f5ea6abdbcbc107ac3b/2020/04/13/HTTP_APIs_02_Picture2.png"
+        },
+        {
+          "type": "text",
+          "text": "3) Вам необходимо возвращать в лямбду то, что вы хотите передавать по своему API\nВ примере (пункт 2) реализован запрос к созданному API, который возвращает список игр, полученные по API с сайта boardgameatlas.com. В документе можно увидеть запрос к созданному API, а также код, который расположен в labda (все тоже самое, что в пункте 1, только адаптированное под lambda function)."
+        },
+        {
+          "type": "text",
+          "text": "4) Важно помнить о безопасности, если вам необходимо защитись свои данные: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-protect.html "
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Dolor",
-      "color": "blue",
-      "price": 500,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/5/4/e/54ef2ae25328982d8ec84de9bb018bde.jpeg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Воркшоп “Общение после COVID-19“",
+      "color": "workshop",
+      "price": 0,
+      "imageSrc": "https://images.ctfassets.net/w6r2i5d8q73s/IufHDhA4qVYC3xmIHxIYp/d225a28a4e951f4893bfc1bd4e914a91/S-smart-ldj-workshop.png",
+      "brief": "Дизайн-структура для проведения воркшопа",
+      "description": [
+        {
+          "type": "text",
+          "text": "Структура воркшопа"
+        },
+        {
+          "type": "text",
+          "text": "0) (20 мин) Общее введение"
+        },
+        {
+          "type": "text",
+          "text": "1) Вспоминаем знакомых\n(15 минут) Каждый участник заполняет свой круг \n(15 минут) Обсуждаем изменения в кругах общения (общее обсуждение)\nС кем общались много, а с кем мало?\nЧто поменялось в общении?\nПроизошли ли переходы между уровнями?\nЕсть ли уровни, куда бы хотелось поместить больше людей?"
+        },
+        {
+          "type": "text",
+          "text": "2) Матрица трендов\n(5 минут) Дополнительные сферы общения\n(15 минут) Заполняем таблицу с изменениями в общении \n(комментарии не пишем сразу)\nодна строка - один кейс общения с людьми, может быть несколько строк с друзьями\n(10 минут) Перерыв\n(20 минут) Даем им время почитать примеры друг друга -> Обсуждаем и удаляем дубликаты (удаляем ряды)"
+        },
+        {
+          "type": "text",
+          "text": "3) Голосование \"Плохо, хорошо, никак\"\n(15 минут) Индивидуальное голосование с помощью стикеров + комментарии (это наше эмоциальное отношение к происходящей сфере, почему именно в эту категорию)"
+        },
+        {
+          "type": "text",
+          "text": "4) Обобщение\n(10 минут) Перенос результатов голосования в таблицу\n(10 минут) Подведение итогов в группе\nОбщее подведение итогов"
+        },
+        {
+          "type": "text",
+          "text": "Key takeaways"
+        },
+        {
+          "type": "text",
+          "text": "1) Список проблемных областей (трендов) 2) Классификация трендов"
+        },
+        {
+          "type": "text",
+          "text": "Артефакты"
+        },
+        {
+          "type": "text",
+          "text": "1) Круги общения 2) Таблица трендов 3) Классификация трендов по результатам голосования"
+        },
+        {
+          "type": "image",
+          "imageSrc": "http://images.vfl.ru/ii/1640553554/270fb31e/37283377.png"
+        },
+        {
+          "type": "text",
+          "text": "Материалы: https://miro.com/app/board/o9J_lW-NfRU=/"
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Sit",
-      "color": "black",
-      "price": 600,
-      "imageSrc": "https://lapkins.ru/upload/uf/55b/55b9fa60a5dbc4abe05fa7abe6564d6b.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
-    },
-    {
-      "id": 5,
-      "title": "Amet",
-      "color": "black",
-      "price": 1000,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Материалы для работы в Miro",
+      "color": "workshop",
+      "price": 0,
+      "imageSrc": "https://miro.com/blog/wp-content/uploads/2019/10/icon.svg",
+      "brief": "Советы по организации рабочего пространства в Miro",
+      "description": [
+        {
+          "type": "text",
+          "text": "Рекомендации"
+        },
+        {
+          "type": "text",
+          "text": "- не делать воркшоп на 20 чел в одном пространстве\n- копировать воркшопы (чтобы был пустой шаблон, который не сломают)\n- тестировать воркшоп и пространство заранее перед занятием с людьми, которые не знают про воркшоп\n- сделать заранее последовательность шагов (инструкция для модератора) \n- заранее проверить что у вас по ссылке есть доступ к редактированию элементов для участников \n- не делать элементы большими по размеру (шрифты не 250, а 50-100), потому что лагает на плохих компах"
+        },
+        {
+          "type": "text",
+          "text": "Лайфхаки div {\n     attrs[\"dangerouslySetInnerHTML\"] = InnerHTML(\"<h1>Привет</h1>\")\n }"
+        },
+        {
+          "type": "text",
+          "text": "1) Связывать объекты Ctrl+K\n2) Выравнивать карточки, распределять (одной кнопкой, по нужному краю)\n3) Копировать с помощью alt (сохраняем одинаковый размер и просто удобно копировать)\n4) Переносить информацию из Excel\n5) Единый размер шрифта (выделить все нужные объекты и задать размер)\n6) Фиксировать поля\n7) Создавать фреймы, объединять объекты\n8) Переносить нужные инструменты в панель быстрого доступа\n9) Цифры 1 - 9 быстрые клавиши элементов боковой панели\n10) Шаблоны шаблоны шаблоны\n11) Задать стартовый экран (в меню настроек в верхнем правом углу)\n12) Следовать за презентующим (нажать на миниатюру презентующего)\n13) Комментировать\n14) Голосовать\n15) Таймер и действия"
+        },
+        {
+          "type": "text",
+          "text": "Материалы: https://miro.com/app/board/o9J_lUv_YXQ=/"
+        }
+      ]
     }
   ],
   "comments": [
     {
       "shopItemId": 2,
-      "text": "Very nice!",
-      "id": 1
-    },
-    {
-      "shopItemId": 2,
-      "text": "sdadsasd",
+      "text": "Не очень понятный материал, хотелось бы больше конкретики о безопасности, информации в источнике недостаточно",
       "id": 2
-    },
-    {
-      "shopItemId": 2,
-      "text": "sdkfmsdlkf",
-      "id": 3
-    },
-    {
-      "shopItemId": 2,
-      "text": "asdasd",
-      "id": 4
-    },
-    {
-      "shopItemId": 2,
-      "text": "asdasdq312312",
-      "id": 5
-    },
-    {
-      "shopItemId": 2,
-      "text": "34123123123asdasd",
-      "id": 6
-    },
-    {
-      "shopItemId": 2,
-      "text": "slkdjalksdl",
-      "id": 7
-    },
-    {
-      "shopItemId": 3,
-      "text": "asdasdmaslkd",
-      "id": 8
-    },
-    {
-      "shopItemId": 3,
-      "text": "asdad;q3le23",
-      "id": 9
     }
   ]
 }

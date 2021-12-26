@@ -151,10 +151,7 @@ export function SingleItemComponent() {
                     </Col>
                     <Col>
                         <h1>{item.title}</h1>
-                        <p>Brief: {item.brief}</p>
-                        <h5>Description</h5>
                         {renderDescriptions(item.description)}
-                        <span><b>${item.price}</b></span> <Button onClick={() => addToCart()} variant={"success"}>Add to cart</Button>
                     </Col>
                 </Row>
 
