@@ -20,7 +20,7 @@ export function App() {
             {/*Часть, которая рисуется всегда -- хедер страницы*/}
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">Dog Shop</Navbar.Brand>
+                    <Navbar.Brand href="/">Gop Shop</Navbar.Brand>
                     <Nav className="me-auto">
                         {/*Ссылка перехода на главную страницу*/}
                         <Nav.Link href="/">Home</Nav.Link>
