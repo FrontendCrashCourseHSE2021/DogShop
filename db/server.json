@@ -1,123 +1,149 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "id": 1,
+      "quantity": 4
+    },
+    {
+      "id": 2,
+      "quantity": 1
+    }
+  ],
   "items": [
     {
       "id": 1,
-      "title": "Foo bar",
-      "price": 100,
-      "color": "red",
-      "imageSrc": "https://farm8.staticflickr.com/7062/7053816915_8a0a65c3c7_b.jpg",
-      "brief": "Lorem ipsum dolor sit amet",
+      "title": "Чёткие кроссы",
+      "price": 300,
+      "kind": "sneakers",
+      "imageSrc": "https://www.slamdunk.ru/uploads/monthly_2019_03/2019-03-14-22-58-48.jpg.1ec6210d7c21ea99dabc1e72d1219fff.jpg",
+      "brief": "Абибас, отвечаю",
       "description": [
         {
           "type": "text",
-          "text": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+          "text": "Очешуенные кроссы для ровных пацанчиков. Какая разница, сколько стоят твои кроссы, если ты гуляешь в них по Купчино"
         },
-        {
-          "type": "checkbox",
-          "name": "check1",
-          "variant": [
-            "asdlasldlsa",
-            "aspqqp",
-            "qweewe"
-          ]
-        },
-        {
-          "type": "image",
-          "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg"
-        },
-        {
-          "type": "checkbox",
-          "name": "check2",
-          "variant": [
-            "Test",
-            "Foo",
-            "Bar"
-          ]
-        },
-        {
-          "type": "text",
-          "text": "dasdasd asljdaslj djasnd kjahskd as"
-        }
+        {}
       ]
     },
     {
       "id": 2,
-      "title": "Lorem ipsum",
-      "color": "red",
-      "price": 123,
-      "imageSrc": "https://sobakainfo.ru/wp-content/uploads/2016/11/6-14.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Треники",
+      "kind": "pants",
+      "price": 300,
+      "imageSrc": "https://kak2z.ru/my_img/img/2017/10/13/97b4f.jpg",
+      "brief": "Конкретные шаровары для денег",
+      "description": [
+        {
+          "type": "text",
+          "text": "Пацана не скрыть за широкими штанами"
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Dolor",
-      "color": "blue",
-      "price": 500,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/5/4/e/54ef2ae25328982d8ec84de9bb018bde.jpeg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "title": "Мокасы",
+      "kind": "sneakers",
+      "color": "red",
+      "price": 300,
+      "imageSrc": "https://pbs.twimg.com/media/CD3ZqrUWYAAfuzd.jpg",
+      "brief": "Оригинал, мамой клянусь, брат!",
+      "description": [
+        {
+          "type": "text",
+          "text": "Жаль не красные"
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Sit",
+      "title": "Барсетка",
+      "kind": "bag",
       "color": "black",
-      "price": 600,
-      "imageSrc": "https://lapkins.ru/upload/uf/55b/55b9fa60a5dbc4abe05fa7abe6564d6b.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "price": 300,
+      "imageSrc": "https://od.vgorode.ua/img/article/2253/32_main-v1566336825.jpg",
+      "brief": "Не украл, а подарили!",
+      "description": [
+        {
+          "type": "text",
+          "text": "Для твоих шалких копеек"
+        }
+      ]
     },
     {
       "id": 5,
-      "title": "Amet",
+      "title": "Олимпийка",
+      "color": "red",
+      "kind": "shirt",
+      "price": 300,
+      "imageSrc": "http://www.memphis.jp/news/images/GOSHA_G012_J101_1_BACK.jpg",
+      "brief": "С карманами для семок",
+      "description": [
+        {
+          "type": "text",
+          "text": "Как у Гоши Рубчинского"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Кепарик",
+      "kind": "hat",
       "color": "black",
-      "price": 1000,
-      "imageSrc": "https://klkfavorit.ru/wp-content/uploads/2/9/4/29462647f763bf058bf93f4177501696.jpg",
-      "brief": "Lorem ipsum dolor sit amet"
+      "price": 300,
+      "imageSrc": "https://avatars.mds.yandex.net/get-zen_doc/1712630/pub_5ddc7816b27e600192951d5a_5ddc78356b888b11ecbd8a58/scale_1200",
+      "brief": "Нелысая бошка",
+      "description": [
+        {
+          "type": "text",
+          "text": "Пацана не скрыть за широкими штанами"
+        }
+      ]
     }
   ],
   "comments": [
     {
       "shopItemId": 2,
-      "text": "Very nice!",
+      "text": "В таких же батя ушёл за хлебом в 1999!",
       "id": 1
     },
     {
       "shopItemId": 2,
-      "text": "sdadsasd",
+      "text": "В клуб в них не пустили, отказ!",
       "id": 2
     },
     {
       "shopItemId": 2,
-      "text": "sdkfmsdlkf",
+      "text": "Порвались сзади, пацаны застебали",
       "id": 3
     },
     {
-      "shopItemId": 2,
-      "text": "asdasd",
+      "shopItemId": 1,
+      "text": "Не берите, в них ноги воняют",
       "id": 4
     },
     {
-      "shopItemId": 2,
-      "text": "asdasdq312312",
+      "shopItemId": 4,
+      "text": "Продал девятку, купил барсетку! Кайф!",
       "id": 5
     },
     {
-      "shopItemId": 2,
-      "text": "34123123123asdasd",
+      "shopItemId": 3,
+      "text": "Бегать от ментов неудобно, не советую",
       "id": 6
     },
     {
-      "shopItemId": 2,
-      "text": "slkdjalksdl",
+      "shopItemId": 5,
+      "text": "Зимой не холодно, летом не жарко",
       "id": 7
     },
     {
-      "shopItemId": 3,
-      "text": "asdasdmaslkd",
+      "shopItemId": 6,
+      "text": "Чётко!",
       "id": 8
     },
     {
-      "shopItemId": 3,
-      "text": "asdad;q3le23",
+      "shopItemId": 1,
+      "text": "Отмыл от крови, выглядят ок",
       "id": 9
     }
   ]

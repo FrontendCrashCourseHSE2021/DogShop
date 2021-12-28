@@ -6,11 +6,11 @@ export const DATA_URL = "http://localhost:4000";
 
 export class DataService {
 
-    async getData(color: string | null): Promise<ShopItem[]> {
+    async getData(kind: string | null): Promise<ShopItem[]> {
         let url = "";
 
-        if (color) {
-            url = `${DATA_URL}/items?color=${color}`;
+        if (kind) {
+            url = `${DATA_URL}/items?kind=${kind}`;
         } else {
             url = `${DATA_URL}/items`;
         }

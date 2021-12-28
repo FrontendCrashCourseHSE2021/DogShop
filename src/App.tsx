@@ -23,7 +23,7 @@ export function App() {
                     <Navbar.Brand href="/">Gop Shop</Navbar.Brand>
                     <Nav className="me-auto">
                         {/*Ссылка перехода на главную страницу*/}
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/">Домой, ёпт</Nav.Link>
                     </Nav>
                     <Nav className="justify-content-end">
                         {/*Ссылка для перехода в корзину*/}
