@@ -74,7 +74,7 @@ export function CartComponent() {
     return (
         <Container>
             {/*Полная цена*/}
-            <h2>Full price is ${state.fullPrice}</h2>
+            <h2>Ты должен: ₽{state.fullPrice}</h2>
             <Row>
                 {/*Отрисовываем каждый элемент в корзине*/}
                 {
@@ -88,7 +88,7 @@ export function CartComponent() {
                 }
             </Row>
             {/*Просто кнопка-заглушка*/}
-            <Button variant="success">Proceed to checkout</Button>
+            <Button variant="success">Вот деньги, брат</Button>
         </Container>
     );
 }

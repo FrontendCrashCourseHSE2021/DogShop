@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {ItemColor, ShopItem} from "./ShopItem";
+import {ItemKind, ShopItem} from "./ShopItem";
 import {Col, Container, Form, Row} from "react-bootstrap";
 import {ListItemComponent} from "./ListItemComponent";
 import {DataServiceInstance} from "./DataService";
@@ -10,7 +10,7 @@ import "./MainComponent.scss";
  */
 interface MainComponentState {
     items: ShopItem[];
-    color: string | null;
+    kind: string | null;
 }
 
 /**
@@ -19,25 +19,25 @@ interface MainComponentState {
 export function MainComponent() {
     let [state, changeState] = useState<MainComponentState>({
         items: [],
-        color: null
+        kind: null
     });
 
     useEffect(() => {
         // Один раз загружаем все товары
-        DataServiceInstance.getData(state.color).then(value => {
+        DataServiceInstance.getData(state.kind).then(value => {
             changeState({
                 items: value,
-                color: state.color
+                kind: state.kind
             });
         });
-    }, [state.color]);
+    }, [state.kind]);
 
     function onColorInputChange(event: React.ChangeEvent<HTMLSelectElement>) {
         let value: string = event.target.value;
 
         changeState({
             ...state,
-            color: value
+            kind: value
         });
     }
 
@@ -49,18 +49,18 @@ export function MainComponent() {
               <Col xs={3}>
                   <Form.Select defaultValue={""} className="color-select" onChange={event => onColorInputChange(event)}>
                       {
-                          Object.keys(ItemColor).map(color => {
+                          Object.keys(ItemKind).map(kind => {
                             // @ts-ignore
-                            let humanReadable = ItemColor[color]
+                              let humanReadable = ItemKind[kind]
 
                             return (
-                                <option key={color} value={color}>
+                                <option key={kind} value={kind}>
                                     {humanReadable}
                                 </option>
                             );
                           })
                       }
-                      <option value="">All</option>
+                      <option value="">Всё</option>
                   </Form.Select>
               </Col>
           </Row>

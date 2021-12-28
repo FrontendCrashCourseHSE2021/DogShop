@@ -34,7 +34,7 @@ export function CartItemComponent(props: CartItemComponentProps) {
     }, []);
 
     return (
-        <Card className="cart-item">
+        <Card className={"cart-item"} >
             <Row>
                 <Col xs={4}>
                     <img className="img-fluid rounded-start" src={state.item?.imageSrc}/>
@@ -44,7 +44,7 @@ export function CartItemComponent(props: CartItemComponentProps) {
                         <Card.Title>{state.item?.title}</Card.Title>
                         <Card.Text>
                             <div>
-                                Quantity: {props.cartItem.quantity}
+                                Сколько: {props.cartItem.quantity}
                             </div>
                             <div>
                                 {
@@ -57,7 +57,7 @@ export function CartItemComponent(props: CartItemComponentProps) {
                                 // Price: ${itemPrice}
                                 }
 
-                                Price: ${props.cartItem.quantity * (state.item?.price ?? 0)}
+                                Почём: ₽{props.cartItem.quantity * (state.item?.price ?? 0)}
                             </div>
                         </Card.Text>
                     </Card.Body>

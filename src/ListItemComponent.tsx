@@ -27,7 +27,7 @@ export function ListItemComponent(props: ListItemComponentProps) {
     }
 
     return (
-        <Card className={"list-item"} style={{ width: '18rem' }}>
+        <Card className={"shadow-sm list-item"} style={{ width: '18rem', height: '26rem', marginTop:'2px 0', marginBottom:'3px 0'}}>
             <Card.Img style={{height: 242}} variant="top" src={item.imageSrc} />
             <Card.Body>
                 <Card.Title>
@@ -38,8 +38,8 @@ export function ListItemComponent(props: ListItemComponentProps) {
                 <Card.Text>
                     {item.brief}
                 </Card.Text>
-                <span><b>${item.price}</b></span>
-                <div className="add-to-cart"><Button onClick={() => addToCart(item)} variant="success">Add to cart</Button></div>
+                <span><b>₽{item.price}</b></span>
+                <div className="add-to-cart"><Button onClick={() => addToCart(item)} variant="success">В пакет!</Button></div>
             </Card.Body>
         </Card>
     );
