@@ -154,10 +154,29 @@ export function SingleItemComponent() {
                         <p>Brief: {item.brief}</p>
                         <h5>Description</h5>
                         {renderDescriptions(item.description)}
-                        <span><b>${item.price}</b></span> <Button onClick={() => addToCart()} variant={"success"}>Приютить</Button>
+                        <span><b>${item.price}</b></span> <Button onClick={() => addToCart()} variant={"success"}>Помочь 💸</Button>
+                        <Form>
+                            <Form.Text className="text-muted">
+                                Заполните форму обратной связи, если хотите взять животное на передержку
+                            </Form.Text>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>Телефон</Form.Label>
+                                <Form.Control type="phone" placeholder="введите номер" />
+
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                <Form.Label>Дополнительная информация</Form.Label>
+                                <Form.Control type="extra" placeholder="введите текст" />
+                            </Form.Group>
+                            <Button variant="primary" type="submit">
+                                Submit
+                            </Button>
+                        </Form>
                     </Col>
                 </Row>
 
+                <div role="alert" className="fade alert alert-dark show">Комментарии:</div>
                 <div className="comment-block ">
                     {
                         state.comments.map(comment => {
